@@ -1,0 +1,65 @@
+---
+title: "Thesis Title"
+author: "Author Name"
+stage: "final"
+fontsize: "12pt"
+type: "thesis"
+lot: FALSE
+lof: FALSE
+lol: FALSE
+proposal: FALSE
+coordinator: "Coordinator Name"
+submitted:
+  month: "February"
+  year: 2017
+committee:
+  chair: "Chair Member"
+  second: "2nd Member"
+  third: "3rd Member"
+degree:
+  degree: "Master of Science"
+  department: "Psychology"
+defense:
+  dayname: "Monday"
+  date: "February 13th"
+  time: "3:30PM"
+  location: "LO134"
+copyrightyear: 2017
+contact: "author@csun.edu"
+collaboration: "Author Two"
+references:
+  style: "plain"
+  file: "bibliography"
+preface: |
+  Preface goes here
+dedication: |
+  Dedication goes here
+acknowledgement: |
+  Acknowledgement goes here
+abstract: |
+  Abstract goes here
+output: CSUNtemplate::csun_thesis
+---
+
+# The First Chapter
+
+## The First Section
+
+We are writing this using LaTeX <!--[@latex]-->.
+
+# The Second Chapter
+
+## The First Section in the Second Chapter
+
+We can include raw LaTeX:
+
+$$ \sum_{i=1}^{\infty} \frac{1}{i} \leq \infty $$
+
+We can also include inline LaTeX like so: $e^{i \pi}=-1$
+
+We can also add code from various programming languages:
+
+```{R, echo=FALSE}
+x <- rnorm(10, 0, 1)
+plot(x)
+```
