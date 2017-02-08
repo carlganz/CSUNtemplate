@@ -47,6 +47,22 @@ output: CSUNtemplate::csun_thesis
 
 We are writing this using LaTeX <!--[@latex]-->.
 
+R Markdown is a much simpler language that compiles to LaTeX. We can do all sorts of things without the hassle of LaTeX:
+
+*italics* and **bold**.
+
+* A thing
+
+* Another thing
+  + Another another thing
+
+1. First Thing
+
+2. Second thing
+
+> "Quotes look better in blocks." -Someone
+
+
 # The Second Chapter
 
 ## The First Section in the Second Chapter
@@ -57,9 +73,25 @@ $$ \sum_{i=1}^{\infty} \frac{1}{i} \leq \infty $$
 
 We can also include inline LaTeX like so: $e^{i \pi}=-1$
 
-We can also add code from various programming languages:
+We can also add code from various programming languages.
 
-```{R, echo=FALSE}
+#### R
+
+```{R}
 x <- rnorm(10, 0, 1)
+2+2
 plot(x)
+```
+
+#### Haskell
+
+```{haskell, engine.path='ghc'}
+[x | x <- [1..10], odd x]
+```
+
+#### Python
+
+```{python}
+x = 'hello, python world!'
+print(x.split(' '))
 ```
