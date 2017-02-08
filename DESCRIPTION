@@ -1,0 +1,15 @@
+Package: CSUNtemplate
+Type: Package
+Title: Template for CSUN Master's Thesis
+Version: 0.1.0
+Authors@R: c(
+  person("Carl","Ganz", email = "carlganz@gmail.com",role = c("aut", "cre")),
+  person("Jeff", "Wiegley", role = "ctb", comment = "Wrote LaTeX Template")
+  )
+Description: Allows CSUN students to write their Master's Thesis
+  using 'R Markdown'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: rmarkdown
+RoxygenNote: 6.0.0
