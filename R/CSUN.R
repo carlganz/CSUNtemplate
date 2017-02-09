@@ -12,16 +12,23 @@
 
 csun_thesis <- function(...,
                         keep_tex = TRUE,
-                        pandoc_args = c("--chapters")) {
+                        pandoc_args = c("--top-level-division=chapter"
+                                       ,"--biblatex"
+                                        )) {
   fmt <- rmarkdown::pdf_document(
     ...,
+    highlight = NULL,
     template =
-      system.file("templates", "resources",
+      system.file("rmarkdown",
+                  "templates",
+                  "CSUN_Thesis",
+                  "resources",
                   "template.tex",
                   package = "CSUNtemplate"),
     keep_tex = keep_tex,
     pandoc_args = pandoc_args
   )
+
   fmt$inherits <- "pdf_document"
   fmt$knitr$knit_hooks$source <- function(x, options) {
     if (options$prompt && length(x)) {
