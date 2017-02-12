@@ -45,7 +45,7 @@ output: CSUNtemplate::csun_thesis
 
 ## The First Section
 
-We are writing this using LaTeX <!--[@latex]-->.
+We are writing this using LaTeX [@latex].
 
 R Markdown is a much simpler language that compiles to LaTeX. We can do all sorts of things without the hassle of LaTeX:
 

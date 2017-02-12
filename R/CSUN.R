@@ -13,7 +13,7 @@
 csun_thesis <- function(...,
                         keep_tex = TRUE,
                         pandoc_args = c("--top-level-division=chapter"
-                                       ,"--biblatex"
+                                       ,"--natbib"
                                         )) {
   fmt <- rmarkdown::pdf_document(
     ...,
