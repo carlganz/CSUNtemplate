@@ -4,7 +4,8 @@
 \alias{csun_thesis}
 \title{CSUN Thesis Template}
 \usage{
-csun_thesis(..., keep_tex = TRUE, pandoc_args = c("--chapters"))
+csun_thesis(..., keep_tex = TRUE,
+  pandoc_args = c("--top-level-division=chapter", "--natbib"))
 }
 \arguments{
 \item{...}{Additional arguments to \code{rmarkdown::pdf_document}}
