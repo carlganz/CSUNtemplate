@@ -3,17 +3,16 @@
 \author{Author Name}
 
 \usepackage{graphicx}
-
+\usepackage{cite}
+\newcommand\citep{\cite}
 \usepackage{listings}
 
 \title{Thesis Title}
-
+\references{plain}{bibliography}
 \committee
 {Chair Member}
 {2nd Member}
 {3rd Member}
-
-\references{plain,bibliography}
 
 \submitted{February}{2017}
 
@@ -41,7 +40,7 @@
 
 \section{The First Section}\label{the-first-section}
 
-We are writing this using LaTeX .
+We are writing this using LaTeX \citep{latex}.
 
 R Markdown is a much simpler language that compiles to LaTeX. We can do
 all sorts of things without the hassle of LaTeX:
