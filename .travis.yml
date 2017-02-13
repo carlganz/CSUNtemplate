@@ -4,6 +4,10 @@ language: R
 sudo: false
 cache: packages
 
+before_install:
+  - sudo apt-get install texlive-full -y
+  - sudo apt-get install haskell-platform -y
+
 matrix:
   include:
     - os: linux
