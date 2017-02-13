@@ -4,12 +4,18 @@
 CSUN Master Thesis R Markdown Template
 ======================================
 
-### Installation
+Installation
+------------
 
 ``` r
 install.packages("devtools")
 devtools::install_github("carlganz/CSUNtemplate")
 ```
+
+Pandoc
+------
+
+You must install [Pandoc](http://pandoc.org/).
 
 Code of Conduct
 ===============

@@ -6,7 +6,7 @@ output: github_document
 
 # CSUN Master Thesis R Markdown Template
 
-### Installation
+## Installation
 
 ```{R, eval=FALSE}
 
@@ -15,6 +15,9 @@ devtools::install_github("carlganz/CSUNtemplate")
 
 ```
 
+## Pandoc
+
+You must install [Pandoc](http://pandoc.org/).
 
 # Code of Conduct
 
