@@ -6,6 +6,14 @@ output: github_document
 
 # CSUN Master Thesis R Markdown Template
 
+### Installation
+
+```{R, eval=FALSE}
+
+install.packages("devtools")
+devtools::install_github("carlganz/CSUNtemplate")
+
+```
 
 
 # Code of Conduct

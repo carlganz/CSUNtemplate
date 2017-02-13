@@ -4,6 +4,13 @@
 CSUN Master Thesis R Markdown Template
 ======================================
 
+### Installation
+
+``` r
+install.packages("devtools")
+devtools::install_github("carlganz/CSUNtemplate")
+```
+
 Code of Conduct
 ===============
 
