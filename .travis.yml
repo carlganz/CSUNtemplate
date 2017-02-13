@@ -21,9 +21,7 @@ matrix:
       pandoc_version: 1.19.2.1
     - os: linux
       compiler: gcc
-      pandoc_version: 1.12.3
-#    - os: osx
-#      compiler: clang
+
 
 addons:
   apt:
