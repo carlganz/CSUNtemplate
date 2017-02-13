@@ -4,15 +4,12 @@
 \alias{csun_thesis}
 \title{CSUN Thesis Template}
 \usage{
-csun_thesis(..., keep_tex = TRUE,
-  pandoc_args = c("--top-level-division=chapter", "--natbib"))
+csun_thesis(..., keep_tex = TRUE)
 }
 \arguments{
 \item{...}{Additional arguments to \code{rmarkdown::pdf_document}}
 
 \item{keep_tex}{Keep the intermediate tex file used in the conversion to PDF}
-
-\item{pandoc_args}{Additional command line options to pass to pandoc}
 }
 \description{
 Write your thesis for CSUN in R Markdown

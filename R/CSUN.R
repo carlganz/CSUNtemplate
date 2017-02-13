@@ -11,10 +11,7 @@
 #'
 
 csun_thesis <- function(...,
-                        keep_tex = TRUE,
-                        pandoc_args = c("--top-level-division=chapter"
-                                       ,"--natbib"
-                                        )) {
+                        keep_tex = TRUE) {
   fmt <- rmarkdown::pdf_document(
     ...,
     highlight = NULL,
@@ -26,7 +23,8 @@ csun_thesis <- function(...,
                   "template.tex",
                   package = "CSUNtemplate"),
     keep_tex = keep_tex,
-    pandoc_args = pandoc_args
+    pandoc_args = c("--natbib",
+                    pandoc_chapters())
   )
 
   fmt$inherits <- "pdf_document"
@@ -48,4 +46,24 @@ csun_thesis <- function(...,
     )
   }
   fmt
+}
+
+#' Pandoc Chapter Option
+#'
+#' Based on Pandoc version selects correct chapters option
+#'
+#' @author Carl Ganz
+#' @importFrom rmarkdown pandoc_version
+#'
+
+pandoc_chapters <- function() {
+  version <- rmarkdown::pandoc_version()
+
+  if (version >= "1.18") {
+    option <- "--top-level-division=chapter"
+  } else {
+    option <- "--chapters"
+  }
+
+  option
 }
