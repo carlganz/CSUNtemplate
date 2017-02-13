@@ -4,9 +4,9 @@ language: R
 sudo: false
 cache: packages
 
-#before_install:
-#  - sudo apt-get install texlive-full -y
-#  - sudo apt-get install haskell-platform -y
+before_install:
+  - stack config set system-ghc --global true
+  - export PATH=/opt/ghc/7.10.2/bin:$PATH
 
 matrix:
   include:
