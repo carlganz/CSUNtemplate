@@ -2,7 +2,12 @@
 
 language: R
 sudo: false
-cache: packages
+cache:
+  - packages
+  - directories:
+    - $HOME/.stack
+
+pandoc_version: 1.19.2.1
 
 before_install:
   - mkdir -p ~/.local/bin
