@@ -7,8 +7,6 @@ cache:
   - directories:
     - $HOME/.stack
 
-pandoc_version: 1.19.2.1
-
 before_install:
   - mkdir -p ~/.local/bin
   - export PATH=$HOME/.local/bin:$PATH
@@ -20,8 +18,9 @@ matrix:
   include:
     - os: linux
       compiler: gcc
-    - os: osx
-      compiler: clang
+      pandoc_version: 1.19.2.1
+#    - os: osx
+#      compiler: clang
 
 addons:
   apt:
