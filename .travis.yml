@@ -3,3 +3,10 @@
 language: R
 sudo: false
 cache: packages
+
+matrix:
+  include:
+    - os: linux
+      compiler: gcc
+    - os: osx
+      compiler: clang
