@@ -14,3 +14,10 @@ matrix:
       compiler: gcc
     - os: osx
       compiler: clang
+
+addons:
+  apt:
+    sources:
+    - hvr-ghc
+    packages:
+    - ghc-7.10.2
