@@ -4,18 +4,46 @@
 CSUN Master Thesis R Markdown Template
 ======================================
 
+For many graduate students, the hardest part of writing their thesis is not the content of their research, but rather getting their thesis formatted correctly. Students spend hours learning esoteric LaTeX commands instead of studying or enjoying life.
+
+Now with the `CSUNtemplate` R package, CSUN students can write their Thesis in [R Markdown](http://rmarkdown.rstudio.com/), which is much simpler to work with than LaTeX, without losing any functionality (it's still just LaTeX under-the-hood).
+
 Installation
 ------------
 
 ``` r
 install.packages("devtools")
+install.packages("rmarkdown")
 devtools::install_github("carlganz/CSUNtemplate")
 ```
 
 Pandoc
 ------
 
-You must install [Pandoc](http://pandoc.org/).
+You must install [Pandoc](http://pandoc.org/), which comes bundled with RStudio. You will also need to install [LaTeX](https://www.latex-project.org/).
+
+Usage
+=====
+
+Opening Template
+----------------
+
+Once you have installed all the dependencies, the CSUN template will be accessible like any other R Markdown template. You can begin working with the template using the RStudio IDE by selecting File-&gt;New File-&gt;RMarkdown... and selecting the CSUN Template from the template panel. Outside of RStudio you can acheive the same result with:
+
+``` r
+rmarkdown::draft("path/to/new/folder", 
+                 "CSUN_Thesis",
+                 package = "CSUNtemplate")
+```
+
+Working with template
+---------------------
+
+The template R Markdown file behaves like any other R Markdown file, so please refer to the [R Markdown Documentation](http://rmarkdown.rstudio.com/).
+
+Metadata is kept in [YAML](http://www.yaml.org/) format at the top of the file. This allows students to specify LaTex and other parameters without explicitely digging into the LaTeX code.
+
+Students can easily integrate raw LaTeX, and computer code into their thesis.
 
 Code of Conduct
 ===============
